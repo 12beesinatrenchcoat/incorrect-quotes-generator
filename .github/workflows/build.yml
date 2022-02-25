@@ -1,0 +1,39 @@
+name: build + publish the site
+# building the thing, then commiting it to the gh-pages branch
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: build the site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checking out
+        uses: actions/checkout@v2
+
+      - name: use node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: building the thing
+        run: |
+          npm i
+          mkdir promptSets
+          npm run build
+
+      - name: commit to gh-pages
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "GitHub Actions"
+          COMMIT=$(git rev-parse HEAD)
+          git checkout --orphan gh-pages
+          echo node_modules > .gitignore
+          git add -A
+          git commit -m "build for $COMMIT"
+          git push origin gh-pages --force
