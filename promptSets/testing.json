@@ -1,1 +1,26 @@
-{"title":"development testing prompts","description":"prompts used for testing things.","url":"https://github.com/12beesinatrenchcoat/incorrect-quotes-generator/blob/master/promptSets/testing.json","prompts":{"1":[{"text":"{{1.name}}: this is a one person prompt.<br>{{1.name % upper}}: THIS IS MY NAME, BUT UPPERCASE.<br>{{1.name}}: the first character of my name is {{1.name % first}}."},{"text":"{{1.name}}: hello! i am {{1.name}}, and my pronouns are {{1.pronouns.subjectPn}}/{{1.pronouns.objectPn}}!"},{"text":"{{1.name}}: hello! testing a thing. {{1.plural ? true : false % upper}}"}],"2":[{"text":"{{1.name}}: hello, my name is {{1.name}}. my pronouns are {{1.pronouns.subjectPn}}/{{1.pronouns.objectPn}}.<br>{{2.name}}: that's rad. you can call me {{2.name}}, i use {{2.pronouns.subjectPn}}/{{2.pronouns.objectPn}}."},{"text":"{{1.name}}: I AM CURRENTLY EATING!!!<br>{{2.name}}: {{1.pronouns.subjectPn % upper}} {{1.plural ? are : is % upper}} CURRENTLY EATING!!!!!"}]}}
+{
+	"title": "development testing prompts",
+	"description": "prompts used for testing things.",
+	"url": "https://github.com/12beesinatrenchcoat/incorrect-quotes-generator",
+	"prompts": {
+		"1": [
+			{
+				"text": "{{1.name}}: this is a one person prompt.<br>{{1.name % upper}}: THIS IS MY NAME, BUT UPPERCASE.<br>{{1.name}}: the first character of my name is {{1.name % first}}."
+			},
+			{
+				"text": "{{1.name}}: hello! i am {{1.name}}, and my pronouns are {{1.pronouns.subjectPn}}/{{1.pronouns.objectPn}}!"
+			},
+			{
+				"text": "{{1.name}}: hello! testing a thing. {{1.plural ? true : false % upper}}"
+			}
+		],
+		"2": [
+			{
+				"text": "{{1.name}}: hello, my name is {{1.name}}. my pronouns are {{1.pronouns.subjectPn}}/{{1.pronouns.objectPn}}.<br>{{2.name}}: that's rad. you can call me {{2.name}}, i use {{2.pronouns.subjectPn}}/{{2.pronouns.objectPn}}."
+			},
+			{
+				"text": "{{1.name}}: I AM CURRENTLY EATING!!!<br>{{2.name}}: {{1.pronouns.subjectPn % upper}} {{1.plural ? are : is % upper}} CURRENTLY EATING!!!!!"
+			}
+		]
+	}
+}

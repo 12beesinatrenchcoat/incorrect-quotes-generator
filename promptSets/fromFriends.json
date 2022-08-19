@@ -1,1 +1,59 @@
-{"title":"Prompts from the dev's friends","description":"Prompts from suggestions from my friends. Because I have those.","prompts":{"1":[{"text":"{{1.name}}: That awkward moment when you're scrolling through someone's old Instagram posts and you accidentally comment the entire Declaration of Independence."}],"2":[{"text":"{{1.name}}: WELCOME TO BIBLE STUDY WE'RE ALL CHILDREN OF JESUS<br>*the camera cuts to {{2.name}} snorting coke*<br>{{1.name}}: KUMBAYAAAAA MY LORD","tags":["drugs"]},{"text":"{{1.name}}: It's a dinner rush and the restaurant's full but we want to be seated immediately.<br>{{2.name}}: DONE AND DONE LET ME PULL THE TABLE OUT OF MY ASS—","tags":["swearing"]},{"text":"{{1.name}}: Hey {{2.name}} could you read number 23 for the class<br>{{2.name}}: No I cannot! What up, I'm {{2.name}}, I'm 19, and I never fuckin' learned how to read!","tags":["swearing"]},{"text":"{{1.name}}: You either buckle down and do your work or you'll end up at McDonald's.<br>{{2.name}}: WE'RE GOING TO MCDONALD'S IF I DON'T DO MY WORK?<br>{{1.name}}: NO!!"},{"text":"{{1.name}}: Don't tell your mother :)<br>{{2.name}}: Kiss one another :)<br>{{1.name}}: <em>DIE FOR EACH OTHER—</em>","tags":["shipping"]},{"text":"{{1.name}}: So, uh, you guys comin' to my party?<br>{{2.name}}: Who?<br>{{1.name}}: You guys.<br>{{2.name}}: It's just me— *notices the mirror beside {{2.pronouns.objectPn}} and fist bumps it* oh what up, you going?"},{"text":"{{1.name}}: *holding a crayon*<br>{{2.name}}: {{1.name % upper}}, IS THAT A WEED?<br>{{1.name}}: N-no it's a crayo—<br>{{2.name}}: I'M CALLING THE POLICE *presses 9-1-1 on the microwave*<br>The Microwave: 911, what’s your emergency","tags":["drugs"]},{"text":"{{1.name}}: My mom said if I don't get my grades up she won't let me get my tetanus shot next year<br>{{2.name}}: That's… weird, what're you gonna do?<br>{{1.name}}: FUCKIN' STUDY, I GUESS!","tags":["swearing"]},{"text":"{{1.name}}: Bill Nye is out on vacation, I am Bill Nein<br>{{2.name}}: Hey can I go use the bathro—<br>{{1.name}}: <em>N E I N</em>"},{"text":"{{1.name}}: *running away from {{2.name}} and screaming*<br>{{2.name}}, getting out of a car: WHY ARE YOU RUNNING? WHY ARE YOU RUNNING?"},{"text":"{{1.name}}: You need more potassium, just eat yogurt then!<br>{{2.name}}: Yogurt is just fruit sperm. And I'm not gay.","tags":["lewd"]}],"3":[{"text":"{{1.name}}: I SAW YOU HANGING OUT WITH {{2.name % upper}} YESTERDAY<br>{{3.name}}: {{1.name % first upper}}-{{1.name % upper}} IT'S NOT WHAT YOU THINK<br>{{1.name}}: I WON'T HESITATE BITCH *PULLS OUT A GUN*","tags":["shipping","swearing"]}]}}
+{
+	"title": "Prompts from the dev's friends",
+	"description": "Prompts from suggestions from my friends. Because I have those.",
+	"prompts": {
+		"1": [
+			{
+				"text": "{{1.name}}: That awkward moment when you're scrolling through someone's old Instagram posts and you accidentally comment the entire Declaration of Independence."
+			}
+		],
+		"2": [
+			{
+				"text": "{{1.name}}: WELCOME TO BIBLE STUDY WE'RE ALL CHILDREN OF JESUS<br>*the camera cuts to {{2.name}} snorting coke*<br>{{1.name}}: KUMBAYAAAAA MY LORD",
+				"tags": ["drugs"]
+			},
+			{
+				"text": "{{1.name}}: It's a dinner rush and the restaurant's full but we want to be seated immediately.<br>{{2.name}}: DONE AND DONE LET ME PULL THE TABLE OUT OF MY ASS—",
+				"tags": ["swearing"]
+			},
+			{
+				"text": "{{1.name}}: Hey {{2.name}} could you read number 23 for the class<br>{{2.name}}: No I cannot! What up, I'm {{2.name}}, I'm 19, and I never fuckin' learned how to read!",
+				"tags": ["swearing"]
+			},
+			{
+				"text": "{{1.name}}: You either buckle down and do your work or you'll end up at McDonald's.<br>{{2.name}}: WE'RE GOING TO MCDONALD'S IF I DON'T DO MY WORK?<br>{{1.name}}: NO!!"
+			},
+			{
+				"text": "{{1.name}}: Don't tell your mother :)<br>{{2.name}}: Kiss one another :)<br>{{1.name}}: <em>DIE FOR EACH OTHER—</em>",
+				"tags": ["shipping"]
+			},
+			{
+				"text": "{{1.name}}: So, uh, you guys comin' to my party?<br>{{2.name}}: Who?<br>{{1.name}}: You guys.<br>{{2.name}}: It's just me— *notices the mirror beside {{2.pronouns.objectPn}} and fist bumps it* oh what up, you going?"
+			},
+			{
+				"text": "{{1.name}}: *holding a crayon*<br>{{2.name}}: {{1.name % upper}}, IS THAT A WEED?<br>{{1.name}}: N-no it's a crayo—<br>{{2.name}}: I'M CALLING THE POLICE *presses 9-1-1 on the microwave*<br>The Microwave: 911, what’s your emergency",
+				"tags": ["drugs"]
+			},
+			{
+				"text": "{{1.name}}: My mom said if I don't get my grades up she won't let me get my tetanus shot next year<br>{{2.name}}: That's… weird, what're you gonna do?<br>{{1.name}}: FUCKIN' STUDY, I GUESS!",
+				"tags": ["swearing"]
+			},
+			{
+				"text": "{{1.name}}: Bill Nye is out on vacation, I am Bill Nein<br>{{2.name}}: Hey can I go use the bathro—<br>{{1.name}}: <em>N E I N</em>"
+			},
+			{
+				"text": "{{1.name}}: *running away from {{2.name}} and screaming*<br>{{2.name}}, getting out of a car: WHY ARE YOU RUNNING? WHY ARE YOU RUNNING?"
+			},
+			{
+				"text": "{{1.name}}: You need more potassium, just eat yogurt then!<br>{{2.name}}: Yogurt is just fruit sperm. And I'm not gay.",
+				"tags": ["lewd"]
+			}
+		],
+		"3": [
+			{
+				"text": "{{1.name}}: I SAW YOU HANGING OUT WITH {{2.name % upper}} YESTERDAY<br>{{3.name}}: {{1.name % first upper}}-{{1.name % upper}} IT'S NOT WHAT YOU THINK<br>{{1.name}}: I WON'T HESITATE BITCH *PULLS OUT A GUN*",
+				"tags": ["shipping", "swearing"]
+			}
+		]
+	}
+}
