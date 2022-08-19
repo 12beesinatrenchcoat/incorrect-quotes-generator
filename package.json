@@ -23,7 +23,6 @@
 		"esbuild": "^0.14.2",
 		"eslint": "^7.28.0",
 		"eslint-config-xo": "^0.36.0",
-		"node-json-minify": "^1.0.0",
 		"sass": "^1.45.0",
 		"terser": "^5.14.2",
 		"vite": "^3.0.8",

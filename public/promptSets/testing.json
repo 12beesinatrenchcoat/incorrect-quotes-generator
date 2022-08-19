@@ -1,7 +1,7 @@
 {
 	"title": "development testing prompts",
 	"description": "prompts used for testing things.",
-	"url": "https://github.com/12beesinatrenchcoat/incorrect-quotes-generator/blob/master/promptSets/testing.json",
+	"url": "https://github.com/12beesinatrenchcoat/incorrect-quotes-generator",
 	"prompts": {
 		"1": [
 			{
