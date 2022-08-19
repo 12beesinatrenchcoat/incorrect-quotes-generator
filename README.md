@@ -12,7 +12,27 @@ Colors are from / based on Holllo's color theme, [Love](https://love.holllo.cc/)
 
 The external link icon ("arrow-up-right-from-square") is from [Font Awesome 6.0](https://fontawesome.com/v6.0/icons/arrow-up-right-from-square?s=solid). Its SVG code is in [style.sass](sass/style.sass).
 
-## prompts
+# development
+> making more stuff!
+
+## contributing
+[Issues](https://github.com/12beesinatrenchcoat/incorrect-quotes-generator/issues/new) and pull requests welcome (please create an issue if you plan on working on anything major though, thanks!)
+
+## code
+This project uses [Vite](https://vitejs.dev).
+```shell
+git clone https://github.com/12beesinatrenchcoat/incorrect-quotes-generator.git
+cd incorrect-quotes-generator
+npm i
+```
+
+For a development environment, `npm run dev` or `npx vite`.
+
+To build, run `npm run build` or `npx vite build`.
+
+To preview a build, run `npm run preview` or `npx vite preview`.
+
+## prompt sets
 The [rawPromptSets](./rawPromptSets) directory contains the sets of prompts, each of which are formatted like:
 ```jsonc
 {
@@ -30,11 +50,9 @@ The [rawPromptSets](./rawPromptSets) directory contains the sets of prompts, eac
 	}
 }
 ```
+I'll make an editor for them later.
 
-There's also [promptSetList.json](./promptSetList.json), containing all the loadable prompt sets.
+There's also [promptSetList.json](public/promptSetList.json), containing all the loadable prompt sets.
 
 If you want to load your own prompt sets, use the `window.fetchPromptSet(path, key)` function (where "path" is a path to the json file, and "key" is what the set will be internally referred to)! \
 Feel free to submit pull requests.
-
-## contributing
-[Issues](https://github.com/12beesinatrenchcoat/incorrect-quotes-generator/issues/new) and pull requests welcome (please create an issue if you plan on working on anything major though, thanks!)

@@ -1,12 +1,12 @@
 {
 	"name": "incorrect-quotes-generator",
 	"version": "1.0.0",
-	"description": "a ripoff of scatterpatter's incorrect quotes generator ",
+	"description": "a ripoff of scatterpatter's incorrect quotes generator",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/12beesinatrenchcoat/incorrect-quotes-generator.git"
 	},
-	"author": "12beesinatrenchcoat",
+	"author": "Andy Chan / 12beesinatrenchcoat <12beesinatrenchcoat@protonmail.com>",
 	"license": "MIT",
 	"private": true,
 	"bugs": {
@@ -14,14 +14,19 @@
 	},
 	"homepage": "12beesinatrenchcoat.github.io/incorrect-quotes-generator",
 	"scripts": {
-		"test": "xo",
-		"build": "node build.js"
+		"lint": "eslint js",
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"esbuild": "^0.14.2",
 		"eslint": "^7.28.0",
 		"eslint-config-xo": "^0.36.0",
 		"node-json-minify": "^1.0.0",
-		"sass": "^1.45.0"
+		"sass": "^1.45.0",
+		"terser": "^5.14.2",
+		"vite": "^3.0.8",
+		"vite-plugin-html": "^3.2.0"
 	}
 }

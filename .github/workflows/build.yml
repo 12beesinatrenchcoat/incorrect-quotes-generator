@@ -16,24 +16,21 @@ jobs:
       - name: checking out
         uses: actions/checkout@v2
 
-      - name: use node.js 16
-        uses: actions/setup-node@v2
+      - name: use node.js 18
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: building the thing
         run: |
-          npm i
-          mkdir promptSets
-          npm run build
+          npm ci
+          npm build
 
-      - name: commit to gh-pages
-        run: |
-          git config --global user.email "<>"
-          git config --global user.name "GitHub Actions"
-          COMMIT=$(git rev-parse HEAD)
-          git checkout --orphan gh-pages
-          echo node_modules > .gitignore
-          git add -A
-          git commit -m "build for $COMMIT"
-          git push origin gh-pages --force
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: 'gh-pages'
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

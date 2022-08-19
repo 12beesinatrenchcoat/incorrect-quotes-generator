@@ -9,7 +9,7 @@ window.generateQuote = function () {
 	const characters = window.getCharacters();
 
 	// randomize character order?
-	if (window.settings["randomize"].checked) {
+	if (window.settings.randomize.checked) {
 		// fisher-yates shuffle - thanks https://javascript.info/task/shuffle
 		for (let i = characters.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
