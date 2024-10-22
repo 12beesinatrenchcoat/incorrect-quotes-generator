@@ -1,15 +1,13 @@
 // with apologies, this is a bit of a mess. -a
 
 @use "sass:color"
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
-
-@import colors
+@use "colors"
 
 *
 	box-sizing: border-box
 
 \:root
-	font-family: "Open Sans", "Ubuntu", "Helvetica Neue", "Arial", sans-serif
+	font-family: "Atkinson Hyperlegible", "Open Sans", "Ubuntu", "Helvetica Neue", "Arial", sans-serif
 
 h1
 	margin: 0.4em 0
@@ -36,8 +34,8 @@ nav
 		@media (prefers-color-scheme: dark)
 			filter: none
 
-@media (max-width: 64ch)
-	nav > a
+nav > a
+	@media (max-width: 64ch)
 		display: none
 
 a
@@ -64,7 +62,6 @@ a[href^="https"]::after
 	padding: 0.5em
 	background: var(--bg-2)
 	border: 2px var(--gray-3) solid
-
 
 /* character inputs. */
 .character-block
@@ -97,7 +94,7 @@ a[href^="https"]::after
 		width: 12ch
 
 label + *
-	margin-top: 0.4em
+		margin-top: 0.4em
 
 /* the "get some prompts" area */
 #prompt-set-selector
@@ -182,7 +179,7 @@ button
 
 	&:disabled:hover::after
 		position: absolute
-		content: "This button is disabled because there aren't any prompts enabled. Enable some first!"
+		content: "This button is disabled because there aren't any prompts enabled.Enable some first!"
 
 		background: var(--bg-2)
 		color: var(--fg-1)
