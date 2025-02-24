@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig(({ mode }) => {
 	const settings = {
@@ -18,11 +17,6 @@ export default defineConfig(({ mode }) => {
 
 	if (mode === "production") {
 		settings.base = "/incorrect-quotes-generator/";
-		settings.plugins = [
-			createHtmlPlugin({
-				minify: true
-			})
-		]
 		settings.minify = "terser",
 			settings.terserOptions = {
 				ecma: 2015
