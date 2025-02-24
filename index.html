@@ -1,5 +1,106 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/incorrect-quotes-generator/assets/favicon-ST60i_go.svg"><link rel="alternate icon" href="/incorrect-quotes-generator/assets/favicon-Bhokivsa.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><script>console.log("hey there! you've opened the console. lots of debug stuff here.\n" +
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="/incorrect-quotes-generator/assets/favicon-ST60i_go.svg">
+		<link rel="alternate icon" href="/incorrect-quotes-generator/assets/favicon-Bhokivsa.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet">
+		<script>
+			console.log("hey there! you've opened the console. lots of debug stuff here.\n" +
 				"in terms of files though: everything's been minified. saves space and all of that.\n" +
 				"if you want to look at the original source code, stop by the github! (it's a mess) https://github.com/12beesinatrenchcoat/incorrect-quotes-generator\n" +
 				"anyways, thanks for stopping by! <3"
-			);</script><title>yet another incorrect quotes generator</title><script type="module" crossorigin src="/incorrect-quotes-generator/assets/index-kJZH4CJo.js"></script><link rel="stylesheet" crossorigin href="/incorrect-quotes-generator/assets/index-BD0081Bw.css"></head><body><nav><span id="title">yet another incorrect quotes generator</span> <a href="https://github.com/12beesinatrenchcoat/incorrect-quotes-generator">source code</a></nav><noscript>hey! this thing uses javascript, which doesn't seem to be enabled. please enable javascript!</noscript><div><h1>get some prompts</h1><span id="prompt-count">no prompts</span> enabled!</div><div id="prompt-setup" class="columns"><div id="prompt-set-selector" class="flex-column"><h2>prompt sets</h2><span id="prompt-sets-loading">loading...</span></div><div id="tag-list-container"><h2>tags</h2><p id="tag-list-empty">this is where tags go... but there aren't any here yet.</p><div id="tag-list"></div></div><span>More prompts eventually...</span></div><h1>input some stuff</h1><div id="character-blocks"></div><div class="center-wrapper"><button id="remove-character" onclick="removeInput()">x</button><div class="rainbow-wrapper"><button id="generate-quote" onclick="generateQuote()" disabled="disabled">do the thing!</button></div><button id="add-character" onclick="addInput()">+</button></div><h2>other settings</h2><div class="columns" id="settings"><div class="flex-column"><label><input type="checkbox" id="randomize"> Randomize character order</label> <label><input type="checkbox" id="update-output-fields" checked="checked"> Update output on change</label></div><div class="flex-column"><label><input type="checkbox" id="character-range-toggle" disabled="disabled"> Use random number of characters</label> <label>Use prompts with <input type="number" id="prompt-characters-min" min="1" placeholder="1" step="1"> character</label> <label hidden="true">...and a maximum of <input type="number" id="prompt-characters-max" min="2" placeholder="2" step="1"> characters</label></div></div><h1>output</h1><div id="output">this is where the output goes.</div><div id="output-about"></div></body></html>
+			);
+		</script>
+		<title>yet another incorrect quotes generator</title>
+		<script type="module" crossorigin src="/incorrect-quotes-generator/assets/index-DiKpY1qg.js"></script>
+		<link rel="stylesheet" crossorigin href="/incorrect-quotes-generator/assets/index-CbssUlyz.css">
+	</head>
+
+	<body>
+		<nav>
+			<span id="title">yet another incorrect quotes generator</span>
+			<a href="https://github.com/12beesinatrenchcoat/incorrect-quotes-generator">source code</a>
+		</nav>
+
+		<noscript>hey! this thing uses javascript, which doesn't seem to be enabled. please enable
+			javascript!</noscript>
+
+
+		<div>
+			<h1>get some prompts</h1>
+			<span id="prompt-count">no prompts</span> enabled!
+		</div>
+		<div id="prompt-setup" class="columns">
+			<div id="prompt-set-selector" class="flex-column">
+				<h2>prompt sets</h2>
+				<span id="prompt-sets-loading">loading...</span>
+			</div>
+			<div id="tag-list-container">
+				<h2>tags</h2>
+				<p id="tag-list-empty">this is where tags go... but there aren't any here yet.</p>
+				<div id="tag-list"></div>
+			</div>
+
+			<span>More prompts eventually...</span>
+		</div>
+
+		<h1>input some stuff</h1>
+		<div id="character-blocks">
+		</div>
+		<div class="center-wrapper">
+			<button id="remove-character" onclick="removeInput()">x</button>
+			<div class="rainbow-wrapper">
+				<button id="generate-quote" onclick="generateQuote()" disabled>do the thing!</button>
+			</div>
+
+			<button id="add-character" onclick="addInput()">+</button>
+		</div>
+
+		<h2>other settings</h2>
+		<div class="columns" id="settings">
+			<div class="flex-column">
+				<label>
+					<input type="checkbox" id="randomize">
+					Randomize character order
+				</label>
+				<label>
+					<input type="checkbox" id="update-output-fields" checked>
+					Update output on change
+				</label>
+			</div>
+			<div class="flex-column">
+				<label>
+					<input type="checkbox" id="character-range-toggle" disabled>
+					Use random number of characters
+				</label>
+				<label>
+					Use prompts with
+					<input type="number" id="prompt-characters-min" min=1 placeholder=1 step=1>
+					character
+				</label>
+				<label hidden=true>
+					...and a maximum of
+					<input type="number" id="prompt-characters-max" min=2 placeholder=2 step=1>
+					characters
+				</label>
+			</div>
+		</div>
+
+		<h1>output</h1>
+		<div id="output">
+			this is where the output goes.
+		</div>
+		<div id="output-about">
+
+		</div>
+	</body>
+
+</html>

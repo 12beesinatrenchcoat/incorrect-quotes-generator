@@ -1,0 +1,39 @@
+{
+	"title": "Sent in",
+	"description": "Prompts that people have sent to me. Thank you!",
+	"prompts": {
+		"1": [
+			{
+				"text": "{{1.name}}: I was never the weird kid, I was just autistic."
+			}
+		],
+		"2": [
+			{
+				"text": "{{1.name}}: I am going to set this on fire, {{2.name}}. You can't stop me.<br>{{1.name}}: You betrayed me in a way I could never imagine…<br>{{2.name}}: I'M SORRY BUT YOU CAN'T HAVE MY GRANOLA BAR! YOU ARE LITERALLY ALLERGIC!<br>{{1.name}}: I'M BURNING THE LUNCHBOX RIGHT NOW!"
+			}
+		],
+		"3": [
+			{
+				"text": "{{1.name}}: I heard that if you like someone, they will like, brush their kees against yours, or like your arm and stuff.<br>[{{2.name}} and {{3.name}} beating each other up]<br>{{1.name}}: Those two, those two are gonna get married."
+			},
+			{
+				"text": "{{1.name}}: *looks around, hoping nobody sees {{1.pronouns.objectPn}}* It's time for the cheese sacrifice.<br>{{2.name}}: *grabs a wheel of parmesan cheese and places it on a table* Let's do it…<br>{{3.name}}: *turns on the bathroom light* what the fuck are you two doing",
+				"tags": [
+					"swearing"
+				]
+			},
+			{
+				"text": "{{1.name}}: I love you so much, my dry peanut butter and jelly sandwich<br>{{2.name}}: I love you too, my dead phone with a broken charger<br>{{3.name}}: i'm a communist"
+			}
+		],
+		"4": [
+			{
+				"text": " {{1.name}}: Is it considered cannibalism when you eat a girl out?<br> {{2.name}}: If all light is just reflection, then are we hallucinating color?<br> {{3.name}}: If there is space between cells, how come we can't breathe through plastic bags?<br> {{4.name}}: Please go the fuck to sleep",
+				"tags": [
+					"lewd",
+					"swearing"
+				]
+			}
+		]
+	}
+}
