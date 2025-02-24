@@ -33,6 +33,10 @@ To build, run `npm run build` or `npx vite build`.
 To preview a build, run `npm run preview` or `npx vite preview`.
 
 ## prompt sets
+
+> [!WARNING]
+> The format for prompt sets is not final and very subject to change in the future.
+
 The [rawPromptSets](./rawPromptSets) directory contains the sets of prompts, each of which are formatted like:
 ```jsonc
 {

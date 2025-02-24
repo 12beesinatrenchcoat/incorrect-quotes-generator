@@ -1,5 +1,5 @@
 {
-	"scatterpatter":{
+	"scatterpatter": {
 		"title": "ScatterPatter's Incorrect Quotes",
 		"description": "Prompts taken from ScatterPatter's Incorrect Quotes Generator.",
 		"url": "https://incorrect-quotes-generator.neocities.org/",
@@ -9,5 +9,10 @@
 		"title": "Prompts from the dev's friends",
 		"description": "Prompts from suggestions from my friends. Because I have those.",
 		"path": "./promptSets/fromFriends.json"
+	},
+	"sent": {
+		"title": "Sent in",
+		"description": "Prompts that people have sent to me. Thank you!",
+		"path": "./promptSets/sent.json"
 	}
 }
